@@ -1,0 +1,13 @@
+.nav{
+
+  display: flex;
+  flex-direction: row
+}
+
+.nav_li{
+  width: 100% \6;
+  font-size: 20px;;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+  background-color: aqua;  
+
+}
