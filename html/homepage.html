@@ -64,6 +64,40 @@ nav ul li a{
             <li id="li_5"><a href="#">Contact On</a></li></ul>
             <button type="button">Subscribe</button>
     </nav>
+    <div>
+        <form >
+            <input type="checkbox" id="slider" name="slider" value="Slider"/>
+            <label for="slider">Slider</label><br />
+            <input type="checkbox" id="gra" name="gr" value="Grafik" />
+            <label for="gra">Grafik/Text</label><br />
+            <input type="checkbox" id="face" name="face" value="Facebook" />
+            <label for="face">Facebook</label><br />
+
+            <input type="checkbox" id="new" name="newl" value="newsletter" />
+            <label for="new">NewsLetter</label><br />
+            <input type="checkbox" id="screen" name="screen" value="Screen4me" />
+            <label for="screen">Screen4me</label><br />
+            <input type="submit" value="Save"/>  
+        </form>
+    </div>
+   <script>
+    const nav = document.querySelector('nav');
+    const form = document.querySelector('form');  
+    form.addEventListener('submit' , (e)=>{
+     e.preventDefault();
+     let skills = {};
+     document.querySelectorAll('[type=checkbox]').forEach(item =>{
+        if( item.checked === true){
+            skills[item.value] = true;
+        // skills.push(item.value);
+     }else if(item.checked === false){
+          skills[item.value] =false;
+     }
+    })
+     console.log(Object.entries(skills));
+   
+    })
+   </script>
 </body>
 
 </html>
