@@ -2,10 +2,12 @@
 <html lang="en">
 
 <head>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <link href="Css\home.css" >
+    
     <style>
        *{
     padding: 0;
@@ -64,6 +66,82 @@ nav ul li a{
             <li id="li_5"><a href="#">Contact On</a></li></ul>
             <button type="button">Subscribe</button>
     </nav>
+
+    <nav class="nav" id="nav">
+    <div class="nev__menu container" id="nav-menu">
+        <div class="nav__shape">
+            <div class="nav__close" id="nav-close">
+                <box-icon type="solid" name="x-circle"></box-icon>
+
+            </div>
+            <div class="nav__data">
+                <div class="nav__mask">
+                    <img src="images/mahmoud.jpg" alt="foto" class="nav__img">
+                </div>
+                <span class="nav__greeting">Hallo , ich bin's </span>
+                <h1 class="nav__name">Mahmoud <br> Orabi</h1>
+
+            </div>
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link">
+                        <i class="bx bx-home">Home</i>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">
+                        <i class="bx bx-user">About</i>
+                       
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#portfolio" class="nav__link">
+                        <i class="bx bx-briefcase-alt-2">Portfolio</i>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#skills" class="nav__link">
+                        <i class="bx bx-bookmark">Skills</i>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#content" class="nav__link">
+                        <i class="bx bx-message-square-detail">Content</i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+    </div>      
+    </nav>
+    <main class="main" id="main">
+        <header class="header" id="header">
+            <nav class="header__nav container">
+                <a href="#" class="header__logi">
+                    Mahmoud
+                </a>
+                <div class="header__toggle" id="header_toggle">
+                    <i class="bx bx-grid-alt"></i>
+                </div>
+            </nav>
+
+        </header>
+        <section class=" section section__height container " id="home">
+            <h1 style="text-align: center;">Home</h1>
+        </section>
+        <section class=" section section__height container " id="about">
+            <h1 style="text-align: center;">About</h1>
+        </section>
+        <section class=" section section__height container " id="Portfolio">
+            <h1 style="text-align: center;">Portfolio</h1>
+        </section>
+        <section class=" section section__height container " id="skills">
+            <h1 style="text-align: center;">Skills</h1></section>
+        <section class=" section section__height container " id="content">
+            <h1 style="text-align: center;">Content</h1>
+        </section>
+    </main>
     <div>
         <form >
             <input type="checkbox" id="slider" name="slider" value="Slider"/>
