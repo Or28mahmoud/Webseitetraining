@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Beispiel</title>
+    <!-- jQuery einbinden -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #myDiv {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 100px;
+            margin: 20px;
+        }
+          #myDive {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 100px;
+            margin: 20px;
+            font-size: 30px;
+        }
+        #foto{
+             width: 400px;
+             height: 400px;
+             border-radius: 20px; }
+    </style>
+</head>
+
+<body>
+    <div id="myDiv">Klicke mich!</div>
+    <button id="myDive">Klicke dich!</button>
+    <img id="foto" src="https://th.bing.com/th/id/R.382b3315cfbd51cd1fc5c9f6791c8f8e?rik=2Fn111aVyg%2flyQ&pid=ImgRaw&r=0" alt="not found">
+    
+
+    <script>
+        // jQuery-Code
+        $(document).ready(function () {
+            $("#myDiv").click(function () {
+                $(this).css("background-color", "yellow");
+                $(this).text("Du hast mich geklickt!");
+            });
+        }); 
+        $(document).ready(function(){
+            $("#myDive").click(function(){
+                  $(this).css("background-color","red");
+                  $(this).text("you are good");
+                  
+            });
+        });
+        $(document).ready(function(){
+            $("#foto").click(function(){
+                  $(this).css("height", "450");
+            
+
+            });   
+
+        });
+    </script>
+</body>
+
+</html>

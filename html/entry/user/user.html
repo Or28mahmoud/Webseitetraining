@@ -1,0 +1,129 @@
+<!--!DOCTYPE html>
+
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <meta  name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>User</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    </head>
+    <body>
+     <header>
+
+     </header>
+     <div class="container">
+        <div class="formen">
+            <form action="user.php" method="post">
+                <label for="vorname">Vorname</label>
+                <input type="text" name="vorname" placeholder="Vorname" class="form-control" required="required">
+                <label for="nachname">Nachname</label>
+                <input type="text" name="nachname" placeholder="Nachname" class="form-control" required="required">
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Email" class="form-control" required="required">
+                <input type="button" value="Absenden">
+
+            </form>
+        </div>
+     </div>
+     <footer></footer>    
+    </body>
+</html-->
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #337ab7;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .formen {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .formen label {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .formen input[type="text"],
+        .formen input[type="email"],
+        .formen input[type="button"] {
+            margin-bottom: 20px;
+        }
+
+        .formen input[type="button"] {
+            background-color: #337ab7;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .formen input[type="button"]:hover {
+            background-color: #286090;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        User Registration
+    </header>
+    <nav>
+        <a href="../user.html">Startseite</a>
+
+
+    </nav>
+    <div class="container">
+        <div class="formen">
+            <form action="user.php" method="post">
+                <label for="vorname">Vorname</label>
+                <input type="text" name="vorname" placeholder="Vorname" class="form-control" required="required">
+                <label for="nachname">Nachname</label>
+                <input type="text" name="nachname" placeholder="Nachname" class="form-control" required="required">
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Email" class="form-control" required="required">
+                <input type="button" value="Absenden">
+            </form>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Your Company. Alle Rechte vorbehalten.
+    </footer>
+</body>
+
+</html>
